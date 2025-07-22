@@ -1,0 +1,244 @@
+{
+  "title": "AI Interactive Storybook – A Journey Through Choices",
+  "startPage": "intro",
+  "pages": {
+    "intro": {
+      "id": "intro",
+      "title": "The Enchanted Realm",
+      "narration": "Welcome, brave adventurer, to a mystical realm where your choices shape destiny. You stand at the edge of an ancient forest, where three paths diverge before you.",
+      "scene": "forest",
+      "character": {
+        "position": [0, 0, 3],
+        "animation": "idle"
+      },
+      "choices": [
+        {
+          "id": "path_forest",
+          "text": "Venture deeper into the mysterious forest",
+          "nextPage": "deep_forest"
+        },
+        {
+          "id": "path_cave",
+          "text": "Explore the dark cave entrance",
+          "nextPage": "cave_entrance"
+        },
+        {
+          "id": "path_castle",
+          "text": "Approach the distant castle on the hill",
+          "nextPage": "castle_approach"
+        }
+      ]
+    },
+    
+    "deep_forest": {
+      "id": "deep_forest",
+      "title": "Heart of the Forest",
+      "narration": "The ancient trees whisper secrets as you walk deeper into their embrace. Suddenly, you encounter a wise old owl perched on a glowing branch. The owl speaks of a hidden treasure, but warns of the guardian beast that protects it.",
+      "scene": "forest",
+      "character": {
+        "position": [-2, 1, 2],
+        "animation": "talking"
+      },
+      "choices": [
+        {
+          "id": "seek_treasure",
+          "text": "Seek the treasure despite the danger",
+          "nextPage": "treasure_quest"
+        },
+        {
+          "id": "ask_wisdom",
+          "text": "Ask the owl for wisdom instead",
+          "nextPage": "owl_wisdom"
+        }
+      ]
+    },
+    
+    "cave_entrance": {
+      "id": "cave_entrance",
+      "title": "The Crystal Caverns",
+      "narration": "The cave entrance glows with an eerie blue light. As you step inside, you discover walls lined with luminescent crystals. Deep within, you hear the sound of rushing water and see two passages - one leads to an underground lake, the other to a chamber filled with ancient runes.",
+      "scene": "cave",
+      "character": {
+        "position": [1, 0, 1],
+        "animation": "walking"
+      },
+      "choices": [
+        {
+          "id": "underground_lake",
+          "text": "Follow the sound to the underground lake",
+          "nextPage": "crystal_lake"
+        },
+        {
+          "id": "rune_chamber",
+          "text": "Investigate the chamber with ancient runes",
+          "nextPage": "ancient_runes"
+        }
+      ]
+    },
+    
+    "castle_approach": {
+      "id": "castle_approach",
+      "title": "The Forgotten Fortress",
+      "narration": "The castle looms before you, its towers reaching toward stormy clouds. At the gate, you meet a noble knight who tells you the castle holds either great treasure or terrible curse. The choice is yours - will you enter as a guest or attempt to sneak in under cover of darkness?",
+      "scene": "castle",
+      "character": {
+        "position": [0, 0, 4],
+        "animation": "idle"
+      },
+      "choices": [
+        {
+          "id": "enter_guest",
+          "text": "Enter as an honored guest",
+          "nextPage": "royal_welcome"
+        },
+        {
+          "id": "sneak_in",
+          "text": "Sneak in through the shadows",
+          "nextPage": "shadow_path"
+        }
+      ]
+    },
+    
+    "treasure_quest": {
+      "id": "treasure_quest",
+      "title": "The Guardian's Challenge",
+      "narration": "You face the mighty forest guardian - a majestic stag with antlers that shimmer like starlight. Instead of attacking, it speaks: 'True treasure comes not from gold, but from the courage to protect others.' It offers you a choice: take the material treasure or accept the gift of becoming a forest protector.",
+      "scene": "forest",
+      "character": {
+        "position": [0, 0, 2],
+        "animation": "talking"
+      },
+      "choices": [
+        {
+          "id": "take_gold",
+          "text": "Take the material treasure",
+          "nextPage": "ending_greed"
+        },
+        {
+          "id": "become_protector",
+          "text": "Accept the role of forest protector",
+          "nextPage": "ending_guardian"
+        }
+      ]
+    },
+    
+    "owl_wisdom": {
+      "id": "owl_wisdom",
+      "title": "Ancient Knowledge",
+      "narration": "The owl's eyes gleam with ancient wisdom. 'Young seeker,' it hoots, 'the greatest power lies in understanding. I grant you the ability to speak with all forest creatures and the knowledge to heal the wounded land.' You feel a warm energy flow through you as you gain this incredible gift.",
+      "scene": "forest",
+      "character": {
+        "position": [0, 0, 2],
+        "animation": "idle"
+      },
+      "isEnding": true
+    },
+    
+    "crystal_lake": {
+      "id": "crystal_lake",
+      "title": "The Reflection of Truth",
+      "narration": "The underground lake's surface mirrors not your physical form, but your true self. In its depths, you see visions of possible futures. A voice from the water offers you the choice to see all possible outcomes of any decision you make, but warns that such knowledge comes with great responsibility.",
+      "scene": "cave",
+      "character": {
+        "position": [2, 0, 0],
+        "animation": "talking"
+      },
+      "choices": [
+        {
+          "id": "accept_sight",
+          "text": "Accept the gift of foresight",
+          "nextPage": "ending_oracle"
+        },
+        {
+          "id": "decline_sight",
+          "text": "Decline and keep life's mysteries",
+          "nextPage": "ending_mystery"
+        }
+      ]
+    },
+    
+    "ancient_runes": {
+      "id": "ancient_runes",
+      "title": "The Scholar's Discovery",
+      "narration": "The runes tell the story of an ancient civilization that possessed incredible magical knowledge. As you study them, you begin to understand their language and realize you can unlock their secrets. However, the final inscription warns that this knowledge must be shared with the world, not hoarded for personal gain.",
+      "scene": "cave",
+      "character": {
+        "position": [-1, 0, 2],
+        "animation": "talking"
+      },
+      "isEnding": true
+    },
+    
+    "royal_welcome": {
+      "id": "royal_welcome",
+      "title": "The Generous Heart",
+      "narration": "The castle's inhabitants welcome you with open arms. You discover they are not ordinary people, but spirits of kindness who have been waiting for someone pure of heart. The castle's treasure is revealed to be the power to grant wishes to those in need. You are offered the chance to become the castle's new guardian.",
+      "scene": "castle",
+      "character": {
+        "position": [0, 0, 3],
+        "animation": "idle"
+      },
+      "isEnding": true
+    },
+    
+    "shadow_path": {
+      "id": "shadow_path",
+      "title": "The Thief's Lesson",
+      "narration": "Your stealthy approach leads you to discover the castle's secret - it's a sanctuary for lost souls seeking redemption. Your attempt at sneaking is noticed, but instead of punishment, you're offered a chance to help others find their way back to the light. Sometimes the greatest treasure is the opportunity to make amends.",
+      "scene": "castle",
+      "character": {
+        "position": [-2, 0, 2],
+        "animation": "walking"
+      },
+      "isEnding": true
+    },
+    
+    "ending_greed": {
+      "id": "ending_greed",
+      "title": "The Price of Greed",
+      "narration": "You take the golden treasure, but as you touch it, you realize it's cursed. The forest begins to wither around you. In your pursuit of material wealth, you've learned a valuable lesson about what truly matters. The forest guardian gives you one last chance to make things right by using the gold to help others instead of keeping it for yourself.",
+      "scene": "forest",
+      "character": {
+        "position": [0, 0, 2],
+        "animation": "idle"
+      },
+      "isEnding": true
+    },
+    
+    "ending_guardian": {
+      "id": "ending_guardian",
+      "title": "The Noble Protector",
+      "narration": "You accept the sacred duty of forest guardian. The stag touches your forehead with its glowing antlers, and you feel an incredible connection to all living things. You have gained not material wealth, but something far more precious - the power to protect and nurture life itself. Your adventure has transformed you into a true hero.",
+      "scene": "forest",
+      "character": {
+        "position": [0, 0, 2],
+        "animation": "talking"
+      },
+      "isEnding": true
+    },
+    
+    "ending_oracle": {
+      "id": "ending_oracle",
+      "title": "The Wise Oracle",
+      "narration": "With your newfound gift of foresight, you become a wise oracle, helping others make better choices by showing them the consequences of their actions. Your cave becomes a place of pilgrimage where people seek guidance. You have gained the power to change the world through wisdom and foresight.",
+      "scene": "cave",
+      "character": {
+        "position": [0, 0, 2],
+        "animation": "talking"
+      },
+      "isEnding": true
+    },
+    
+    "ending_mystery": {
+      "id": "ending_mystery",
+      "title": "The Beautiful Unknown",
+      "narration": "You choose to embrace life's mysteries rather than know all outcomes. This decision fills you with a sense of adventure and wonder. You leave the cave with a heart full of curiosity and excitement for the unknown adventures that await. Sometimes the journey is more valuable than the destination.",
+      "scene": "cave",
+      "character": {
+        "position": [0, 0, 2],
+        "animation": "walking"
+      },
+      "isEnding": true
+    }
+  }
+}
